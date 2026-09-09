@@ -119,11 +119,19 @@ if uploaded_file is not None:
         # Recognition result
         # -----------------------------
         threshold = 0.55
+        def fun(name):
+            result = ""
+            for char in name:
+                if not char.isdigit():
+                result += char
+        
+           
+        return result
 
         if max_score >= threshold:
-
+            clean_name = fun(max_name)
             st.success(
-                f"Person: {max_name}"
+                f"Person: {clean_name}"
             )
 
             st.write(
