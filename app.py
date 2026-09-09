@@ -16,7 +16,7 @@ st.title("Face Recognition")
 # Load saved embeddings
 # -----------------------------
 try:
-    with open("embedding.pkl", "rb") as f:
+    with open("HLJ.pkl", "rb") as f:
         database = pickle.load(f)
 except FileNotFoundError:
     st.error("embedding.pkl not found.")
