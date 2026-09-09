@@ -123,7 +123,8 @@ if uploaded_file is not None:
             result = ""
             for char in name:
                 if not char.isdigit():
-                result += char
+                    result += char
+                
         
            
         return result
