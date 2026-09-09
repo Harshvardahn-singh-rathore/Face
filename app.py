@@ -127,7 +127,7 @@ if uploaded_file is not None:
                 
         
            
-        return result
+            return result
 
         if max_score >= threshold:
             clean_name = fun(max_name)
